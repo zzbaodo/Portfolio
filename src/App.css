@@ -2,11 +2,125 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
-  background-color: #151515;
   box-sizing: border-box;
 }
 /* font-family: "Abril Fatface", cursive; */
 a {
   text-decoration: none;
+  color: white;
+}
+main {
+  background-color: #151515;
+  width: 100vw;
+  min-height: 93vh;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  animation: name 2s 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+  background-color: black !important;
+  z-index: 10;
+}
+
+.hide1 {
+  animation: hide10 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hide2 {
+  animation: hide20 1.5s;
+  animation-delay: 1.5s;
+  color: black;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.hide3 {
+  animation: hide30 1.5s;
+  animation-delay: 3s;
+  color: black;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform: translateX(100%);
+}
+.exclaim {
+  display: inline-block;
+  animation: exclaim10 1s;
+  animation-delay: 4.5s;
+  color: black;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes exclaim10 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    color: rgb(233, 233, 233);
+  }
+}
+@keyframes name {
+  0% {
+    top: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes hide10 {
+  from {
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+    color: rgb(233, 233, 233);
+    transform: translateY(-50%);
+  }
+}
+@keyframes hide20 {
+  from {
+    top: -150px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+    color: rgb(233, 233, 233);
+    transform: translateY(-50%);
+  }
+}
+@keyframes hide30 {
+  0% {
+    top: -150px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+    color: rgb(233, 233, 233);
+    transform: translateX(0%);
+    transform: translateY(-50%);
+  }
 }

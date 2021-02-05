@@ -1,0 +1,11 @@
+.projects__container {
+  color: white;
+  max-width: 1200px;
+  margin: 10px auto;
+  margin-top: 50px
+}
+
+
+.projects__container > h2 {
+    font-size: 40px;
+}

@@ -10,12 +10,22 @@ const Header = () => {
         </div>
         <ul className="list-group">
           <Link to="/home">
-            <li className="navbar-list-item">About</li>
+            <li className="navbar-list-item">Home</li>
+          </Link>
+          <Link to="/projects">
+            <li className="navbar-list-item">Projects</li>
           </Link>
 
-          <li className="navbar-list-item">Resume</li>
-          <li className="navbar-list-item">Project</li>
-          <li className="navbar-list-item">Github</li>
+          <li className="navbar-list-item">
+            <a href="../../images/resume.png" target="_blank">
+              Resume
+            </a>
+          </li>
+          <li className="navbar-list-item">
+            <a href="https://github.com/zzbaodo" target="_blank">
+              Github
+            </a>
+          </li>
         </ul>
       </div>
     </div>
