@@ -2,10 +2,16 @@
   color: white;
   max-width: 1200px;
   margin: 10px auto;
-  margin-top: 50px
+  margin-top: 50px;
+  min-height: 150vh;
 }
 
-
 .projects__container > h2 {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+@media (max-width: 850px) {
+  .projects__container {
+    min-height: 150vh ;
+  }
 }

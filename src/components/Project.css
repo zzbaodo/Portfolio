@@ -9,11 +9,17 @@
 .project-container > img {
   width: 150px;
   border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  flex: 1
 }
 
 .project-desc-container {
   display: flex;
   flex-direction: column;
+  width: 700px;
+  flex: 5;
+  margin-left: 20px ;
 }
 .project-desc-container > p {
   padding: 5px 0;
@@ -31,24 +37,49 @@
   border-radius: 2px;
   margin-right: 10px;
 }
-.project-role{
-    font-style: italic;
-    margin-right: 10px;
+.project-role {
+  font-style: italic;
+  margin-right: 10px;
 }
 .project-tech {
   display: flex;
   align-items: center;
   padding: 10px 0;
+  height: auto;
 }
 .project-tech > p {
   margin-right: 5px;
   font-size: 1rem;
+  display: inline-block;
 }
 
-.project-tech > div {
+.tech-container > div {
   padding: 5px 5px;
   color: black;
   border-radius: 2px;
   margin-right: 10px;
   background-color: #e8e8e8;
+  margin-top: 5px;
+}
+
+.tech-container {
+  display: flex;
+  align-items: center;
+  
+  flex-wrap: wrap;
+
+}
+
+@media (max-width: 850px){
+ .project-container {
+   flex-direction: column;
+ }
+ .project-container > img {
+   width: 40%;
+   min-width: 180px !important;
+ }
+ .project-desc-container{
+   width: 80%;
+   margin-top: 15px;
+ }
 }

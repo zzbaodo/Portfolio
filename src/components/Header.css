@@ -2,8 +2,8 @@
   width: 100vw;
   background-color: black;
   z-index: 10;
-  padding: 10px 0;
-  padding-bottom: 15px;
+  padding: 3px 0;
+  
 }
 li {
   list-style: none;
@@ -34,12 +34,12 @@ li {
   align-items: center;
 }
 .image-container > img {
-  height: 60px;
-  margin-top: 10px;
+  height: 45px;
+  
 }
 .navbar-list-item {
   transition: all 200ms ease-in-out;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
 }
 .navbar-list-item:hover {
   cursor: pointer;

@@ -20,6 +20,12 @@ const Footer = () => {
         </div>
         <div className="icon-container">
           <span className="icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <a href="tel:5094159138">(509) 415-9138</a>
+        </div>
+        <div className="icon-container">
+          <span className="icon">
             <i class="far fa-file-alt"></i>
           </span>
           <a href="../../images/resume.png" target="_blank">

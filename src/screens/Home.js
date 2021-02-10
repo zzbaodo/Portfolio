@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./Home.css"
 import Skills from "../components/Skills"
-
+import { Link } from "react-router-dom"
 const Home = () => {
   const [showSkills, setShowSkills] = useState(false)
 
@@ -10,7 +10,7 @@ const Home = () => {
     console.log("click")
   }
   return (
-    <div className="home">
+    <div data-aos ='fade-up'className="home">
       <div className="home__image-container">
         <img src="../../images/bedet.jpg" alt="avatar" />
       </div>
@@ -31,14 +31,12 @@ const Home = () => {
         </p>
         <div className="home__btn-container">
           <div className="btn">
-            <a href="#" className="animated-button">
-              See My Projects
-            </a>
+            <Link to="/projects">
+              <p className="animated-button">See My Projects</p>
+            </Link>
           </div>
           <div className="btn" onClick={showSkill}>
-            <a href="#" className="animated-button">
-              See My Skills
-            </a>
+            <p className="animated-button">See My Skills</p>
           </div>
         </div>
       </div>

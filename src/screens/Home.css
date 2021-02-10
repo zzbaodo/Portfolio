@@ -24,12 +24,19 @@
   font-size: 4.5rem;
 }
 .home__info > h6 {
-  font-size: 1rem;
-  padding-bottom: 5px;
+  font-size: 0.8rem;
+ 
+  background-color: #e8e8e8;
+  width: fit-content;
+  padding: 5px 5px;
+  color: black;
+  border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 .home__info > p {
-  line-height: 20px;
+  line-height: 22px;
+  font-size: 1.1rem;
 }
 .home__btn-container {
   margin-top: 30px;
@@ -41,7 +48,7 @@
   width: 200px;
   padding: 5px;
   text-align: center;
-
+  margin-left: 5px;
   background-color: #151515;
   transition: all 0.5s ease-in;
 }
