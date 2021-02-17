@@ -1,6 +1,6 @@
 .skills__container {
   width: 600px;
-  height: 70vh;
+  height: 75vh;
   position: absolute;
   background-color: #151515;
   z-index: 10;
@@ -45,7 +45,57 @@
   display: inline-block;
   width: 100%;
 }
+.skills__title {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+  height: 50px;
+}
+.skills__heading {
+  cursor: pointer;
+  position: relative;
+}
+.skills__heading > h2 {
+  padding: 2px 0;
+}
+.skills__heading:hover {
+  border-bottom: 2px #e8e8e8 solid;
+}
 
+.heading-active {
+  background-color: #e8e8e8;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.misc-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  height: 400px;
+  align-items: center
+}
+.logo-container {
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container > img {
+  width: 100px;
+  border-radius: 10px;
+  flex: 5;
+}
+.logo-container > h2 {
+  flex: 1;
+}
 .bar span {
   position: relative;
   display: inline-block;
@@ -87,12 +137,32 @@
 .span7::before {
   width: 80%;
 }
+
 .span8::before {
-  width: 70%;
-}
-.span9::before {
   width: 80%;
 }
+.span9::before {
+  width: 88%;
+}
+.span10::before {
+  width: 75%;
+}
+.span11::before {
+  width: 75%;
+}
+.span12::before {
+  width: 85%;
+}
+.span13::before {
+  width: 90%;
+}
+.span14::before {
+  width: 60%;
+}
+.span15::before {
+  width: 75%;
+}
+
 
 @keyframes bar {
   from {

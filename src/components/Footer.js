@@ -8,7 +8,7 @@ const Footer = () => {
           <span className="icon">
             <i class="fab fa-github" />
           </span>
-          <a href="https://github.com/zzbaodo" target="_blank">
+          <a href="https://github.com/zzbaodo" target="_blank" rel="noreferrer">
             Github Link
           </a>
         </div>
@@ -16,7 +16,9 @@ const Footer = () => {
           <span className="icon">
             <i class="fas fa-envelope-open-text"></i>
           </span>
-          <a href="mailto:zzbaodo@gmail.com">zzbaodo@gmail.com</a>
+          <a href="mailto:zzbaodo@gmail.com" rel="noreferrer">
+            zzbaodo@gmail.com
+          </a>
         </div>
         <div className="icon-container">
           <span className="icon">

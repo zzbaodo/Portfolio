@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "./Header.css"
 import { NavLink } from "react-router-dom"
 import { Sling as Hamburger } from "hamburger-react"
@@ -8,22 +8,7 @@ const Header = () => {
   const onClickHandler = () => {
     setShow(!show)
   }
-  let homeActive
-  let projectsActive
-  useEffect(() => {
-    if (
-      window.location.pathname === "/" ||
-      window.location.pathname === "/home"
-    ) {
-      homeActive = "active"
-      projectsActive = "none"
-      console.log("home is active")
-    } else {
-      projectsActive = "active"
-      homeActive = "none"
-      console.log("project is active")
-    }
-  }, [window.location.pathname])
+
   return (
     <>
       <div className="header__container">
@@ -46,12 +31,20 @@ const Header = () => {
             </NavLink>
 
             <li className="navbar-list-item">
-              <a href="../../images/resume.png" target="_blank">
+              <a
+                href="../../images/resume.png"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Resume
               </a>
             </li>
             <li className="navbar-list-item">
-              <a href="https://github.com/zzbaodo" target="_blank">
+              <a
+                href="https://github.com/zzbaodo"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Github
               </a>
             </li>

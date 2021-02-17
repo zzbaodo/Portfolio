@@ -14,12 +14,16 @@ const MenuDropDown = () => {
           </Link>
 
           <li className="navbar-list-item">
-            <a href="../../images/resume.png" target="_blank">
+            <a href="../../images/resume.png" target="_blank" rel="noreferrer">
               Resume
             </a>
           </li>
           <li className="navbar-list-item">
-            <a href="https://github.com/zzbaodo" target="_blank">
+            <a
+              href="https://github.com/zzbaodo"
+              target="_blank"
+              rel="noreferrer"
+            >
               Github
             </a>
           </li>
