@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./Home.css"
 import Skills from "../components/Skills"
 import { Link } from "react-router-dom"
+import VPlayer from "../components/VPlayer"
 const Home = () => {
   const [showSkills, setShowSkills] = useState(false)
 

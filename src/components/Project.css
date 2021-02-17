@@ -11,7 +11,7 @@
   border-radius: 20px;
   object-fit: cover;
   display: block;
-  flex: 1
+  flex: 1;
 }
 
 .project-desc-container {
@@ -19,7 +19,7 @@
   flex-direction: column;
   width: 700px;
   flex: 5;
-  margin-left: 20px ;
+  margin-left: 20px;
 }
 .project-desc-container > p {
   padding: 5px 0;
@@ -65,21 +65,28 @@
 .tech-container {
   display: flex;
   align-items: center;
-  
+
   flex-wrap: wrap;
-
 }
-
-@media (max-width: 850px){
- .project-container {
-   flex-direction: column;
- }
- .project-container > img {
-   width: 40%;
-   min-width: 180px !important;
- }
- .project-desc-container{
-   width: 80%;
-   margin-top: 15px;
- }
+.live-demo {
+  background-color: #44d46a;
+  width: fit-content;
+  padding: 4px 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+  color: black;
+  cursor: pointer;
+}
+@media (max-width: 850px) {
+  .project-container {
+    flex-direction: column;
+  }
+  .project-container > img {
+    width: 40%;
+    min-width: 180px !important;
+  }
+  .project-desc-container {
+    width: 80%;
+    margin-top: 15px;
+  }
 }

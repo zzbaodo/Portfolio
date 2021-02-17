@@ -1,6 +1,7 @@
 import React from "react"
 import "./Projects.css"
 import Project from "../components/Project"
+import Video from "../videos/video.mp4"
 const Projects = () => {
   return (
     <div className="projects__container">
@@ -22,6 +23,7 @@ const Projects = () => {
             "MongoDB",
           ]}
           date="Sep 2020"
+          video={Video}
         />
         <Project
           image={`../../images/ttlogo.png`}

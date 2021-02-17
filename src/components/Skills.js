@@ -75,66 +75,64 @@ const Skills = ({ showSkill }) => {
     </>
   )
   const misc = (
-    <>
-      <div className="misc-container">
-        <div className="logo-container">
-          <img
-            src="https://thumbs.dreamstime.com/b/seo-logo-magnifying-glass-search-engine-optimization-blue-yellow-red-green-color-98240334.jpg"
-            alt="SEO"
-          />
-          <h4>SEO </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://zakharpetukhov.website/img/git.a753e089.png"
-            alt="Git"
-          />
-          <h4>Git </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://authy.com/wp-content/uploads/npm-logo.png"
-            alt="NPM"
-          />
-          <h4>NPM </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://miro.medium.com/max/3144/1*RdKDZ6CE5yWJlnKEMoa1HQ.png"
-            alt="Webpack"
-          />
-          <h4>Webpack </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
-            alt="heroku"
-          />
-          <h4>Heroku </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfu1mi6LAfuv1HSVFYUtOVgBsIB5f96Ui_Xw&usqp=CAU"
-            alt="github"
-          />
-          <h4>Github </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://images.techhive.com/images/article/2015/05/aws-logo-100584713-orig.jpg"
-            alt="AWS"
-          />
-          <h4 style={{ marginTop: "20px" }}>AWS </h4>
-        </div>
-        <div className="logo-container">
-          <img
-            src="https://pbs.twimg.com/profile_images/1021778918842531840/FBVP_uDf.jpg"
-            alt="Netlify"
-          />
-          <h4 style={{ marginTop: "20px" }}>Netlify </h4>
-        </div>
+    <div className="misc-container" data-aos="fade-up">
+      <div className="logo-container">
+        <img
+          src="https://thumbs.dreamstime.com/b/seo-logo-magnifying-glass-search-engine-optimization-blue-yellow-red-green-color-98240334.jpg"
+          alt="SEO"
+        />
+        <h4>SEO </h4>
       </div>
-    </>
+      <div className="logo-container">
+        <img
+          src="https://zakharpetukhov.website/img/git.a753e089.png"
+          alt="Git"
+        />
+        <h4>Git </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://authy.com/wp-content/uploads/npm-logo.png"
+          alt="NPM"
+        />
+        <h4>NPM </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://miro.medium.com/max/3144/1*RdKDZ6CE5yWJlnKEMoa1HQ.png"
+          alt="Webpack"
+        />
+        <h4>Webpack </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-512/heroku-5-569467.png"
+          alt="heroku"
+        />
+        <h4>Heroku </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfu1mi6LAfuv1HSVFYUtOVgBsIB5f96Ui_Xw&usqp=CAU"
+          alt="github"
+        />
+        <h4>Github </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://images.techhive.com/images/article/2015/05/aws-logo-100584713-orig.jpg"
+          alt="AWS"
+        />
+        <h4>AWS </h4>
+      </div>
+      <div className="logo-container">
+        <img
+          src="https://pbs.twimg.com/profile_images/1021778918842531840/FBVP_uDf.jpg"
+          alt="Netlify"
+        />
+        <h4>Netlify </h4>
+      </div>
+    </div>
   )
   const onClickHandler = (e) => {
     if (e.target.innerText === "Front-End") {
