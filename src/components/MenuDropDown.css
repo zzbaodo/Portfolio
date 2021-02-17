@@ -1,0 +1,26 @@
+.menuDropDown {
+  position: absolute !important;
+  background-color: black !important;
+  width: 100%;
+  display: none;
+  z-index: 500;
+  overflow: auto;
+  height: 150px;
+}
+.menuDropDown > ul {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+
+@media (max-width: 576px) {
+  .menuDropDown {
+    display: block;
+  }
+}

@@ -8,6 +8,8 @@
 .home__image-container {
   flex: 1;
   border: 0px solid rgba(#000, 0.2);
+  display: flex;
+  align-items: center;
 }
 .home__info {
   flex: 1;
@@ -16,7 +18,7 @@
 .home__image-container > img {
   width: 300px;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 10%;
 }
 
@@ -25,7 +27,7 @@
 }
 .home__info > h6 {
   font-size: 0.8rem;
- 
+
   background-color: #e8e8e8;
   width: fit-content;
   padding: 5px 5px;
@@ -51,9 +53,23 @@
   margin-left: 5px;
   background-color: #151515;
   transition: all 0.5s ease-in;
+  cursor: pointer;
 }
 
 .btn:hover {
   /* background-color: white !important; */
   transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .home {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home {
+    flex-direction: column;
+  }
 }

@@ -2,9 +2,8 @@ import "./App.css"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { useEffect } from "react"
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Home from "./screens/Home"
-import Resume from "./screens/Resume"
 import Projects from "./screens/Projects"
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -14,7 +13,7 @@ function App() {
   }, [])
   return (
     <Router>
-      <div className="cover">
+      {/* <div className="cover">
         <div class="intro-text">
           <h1 class="hide1">
             <span class="text">Driven by Passion</span>
@@ -28,13 +27,14 @@ function App() {
             </span>
           </h1>
         </div>
-      </div>
+      </div> */}
       <main>
         <Header />
-        <Route path="/resume" component={Resume} exact />
-        <Route path="/projects" component={Projects} exact />
-        <Route path="/home" component={Home} exact />
-        <Route path="/" component={Home} exact />
+        <Switch>
+          <Route path="/projects" component={Projects} exact />
+          <Route path="/home" component={Home} exact />
+          <Route path="/" component={Home} exact />
+        </Switch>
       </main>
       <Footer />
     </Router>

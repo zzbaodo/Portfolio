@@ -23,3 +23,18 @@ footer {
     font-size: 30px;
     color: white;
   }
+
+  @media (max-width: 576px) {
+    footer{
+      flex-direction: column;
+      height: fit-content;
+      position: relative;
+      padding-top: 10px;
+    }
+    .icon-container {
+      margin-bottom: 5px;
+    }
+    .icon-container > span {
+     font-size: 25px;
+    }
+  }

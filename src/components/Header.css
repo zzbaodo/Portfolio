@@ -3,12 +3,10 @@
   background-color: black;
   z-index: 10;
   padding: 3px 0;
-  
 }
 li {
   list-style: none;
   color: white;
-
 }
 .list-group {
   display: flex;
@@ -28,14 +26,12 @@ li {
   z-index: 1;
 }
 .image-container {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.image-container > img {
+.logo {
   height: 45px;
-  
 }
 .navbar-list-item {
   transition: all 200ms ease-in-out;
@@ -48,4 +44,25 @@ li {
 }
 .navbar-list-item > a:hover {
   color: wheat;
+}
+
+.hamburger-react {
+  color: white;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .list-group {
+    display: none;
+  }
+  .hamburger-react {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image-container {
+    width: 80px !important;
+  }
 }

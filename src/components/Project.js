@@ -1,11 +1,8 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import "./Project.css"
-import Aos from "aos"
-import "aos/dist/aos.css"
 const Project = ({ desc, roles, types, tech, date, image }) => {
- 
   return (
-    <div data-aos='fade-up' className="project-container">
+    <div data-aos="fade-up" className="project-container">
       <img src={image} alt="project image" />
       <div className="project-desc-container">
         <p>{desc}</p>
@@ -13,7 +10,7 @@ const Project = ({ desc, roles, types, tech, date, image }) => {
           {types && types.map((type) => <div key={type}>{type} </div>)}
         </div>
         <div className="project-roles">
-          Roles:{" "}
+          <span style={{fontWeight: '800'}}>Roles</span>:{" "}
           {roles &&
             roles.map((role) => (
               <span key={role} className="project-role">

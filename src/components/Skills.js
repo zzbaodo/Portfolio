@@ -6,7 +6,7 @@ const Skills = ({ showSkill }) => {
       <div className="backdrop" onClick={showSkill}></div>
       <div className="skills__container">
         <div className="skills__header">
-          <h2>Skills:</h2>
+          <h2>Skills</h2>
           <div className="close-container" onClick={showSkill}>
             <div className="leftright"></div>
             <div className="rightleft"></div>

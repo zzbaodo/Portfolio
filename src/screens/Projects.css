@@ -14,4 +14,7 @@
   .projects__container {
     min-height: 150vh ;
   }
+  .projects__container > h2 {
+    padding-left: 15px !important;
+  }
 }
