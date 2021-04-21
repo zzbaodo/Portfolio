@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./Project.css"
 import VPlayer from "./VPlayer"
-const Project = ({ desc, roles, types, tech, date, image, video }) => {
+const Project = ({ desc, roles, types, tech, date, image, video, src }) => {
   const [showVideo, setShowVideo] = useState(false)
   const onClickHandler = () => {
     setShowVideo(!showVideo)
@@ -9,7 +9,9 @@ const Project = ({ desc, roles, types, tech, date, image, video }) => {
   return (
     <>
       <div data-aos="fade-up" className="project-container">
-        <img src={image} alt={`project ${desc}`} />
+        <a href={src} target="_blank" rel="noopener noreferrer">
+          <img src={image} alt={`project ${desc}`} className="project-logo" />
+        </a>
         <div className="project-desc-container">
           <p>{desc}</p>
           <div className="project-desc">
@@ -33,6 +35,14 @@ const Project = ({ desc, roles, types, tech, date, image, video }) => {
           <div className="project-date">
             <p style={{ color: "grey" }}>{date}</p>
           </div>
+          <a
+            href={src}
+            target="_blank"
+            className="site-link"
+            rel="noopener noreferrer"
+          >
+            Check out the site!
+          </a>
           <div className="live-demo" onClick={onClickHandler}>
             {" "}
             <i className="fas fa-play-circle"></i> Live Demo

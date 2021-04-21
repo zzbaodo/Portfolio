@@ -13,7 +13,7 @@ function App() {
   }, [])
   return (
     <Router>
-      {/* <div className="cover">
+      <div className="cover">
         <div class="intro-text">
           <h1 class="hide1">
             <span class="text">Driven by Passion</span>
@@ -27,7 +27,7 @@ function App() {
             </span>
           </h1>
         </div>
-      </div> */}
+      </div>
       <main>
         <Header />
         <Switch>

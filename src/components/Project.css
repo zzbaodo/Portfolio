@@ -6,14 +6,21 @@
   align-items: center;
 }
 
-.project-container > img {
-  width: 150px;
+.project-logo {
+  width: 200px;
   border-radius: 20px;
   object-fit: cover;
   display: block;
   flex: 1;
 }
-
+.site-link {
+  padding: 3px 5px;
+  margin: 3px 0;
+  color: #e8e8e8;
+  width: fit-content;
+  border-radius: 3px;
+  background-color: #cc1b59;
+}
 .project-desc-container {
   display: flex;
   flex-direction: column;

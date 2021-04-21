@@ -27,16 +27,18 @@
 }
 .home__info > h6 {
   font-size: 0.8rem;
-
+  display: inline;
   background-color: #e8e8e8;
   width: fit-content;
   padding: 5px 5px;
   color: black;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-right: 10px
+
 }
 
 .home__info > p {
+  margin-top: 10px;
   line-height: 22px;
   font-size: 1.1rem;
 }
